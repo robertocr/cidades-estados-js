@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
+
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Estados e Cidades - Exemplo</title>
+      <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
+    </head>
+    <body>
+      <select id="estado1" value="TO"></select>
+      <select id="cidade1" value="Araguaína"></select>
+      <script language="JavaScript" type="text/javascript" charset="utf-8">
+        new dgCidadesEstados({
+          cidade: document.getElementById('cidade1'),
+          estado: document.getElementById('estado1')
+        })
+      </script>
+
+      <br /> <br />
+
+      <select id="estado2"></select>
+      <select id="cidade2"></select>
+      <script language="JavaScript" type="text/javascript" charset="utf-8">
+        new dgCidadesEstados({
+          cidade: document.getElementById('cidade2'),
+          estado: document.getElementById('estado2'),
+          estadoVal: 'SP',
+          cidadeVal: 'São Paulo'
+        })
+      </script>
+
+      <br /> <br />
+
+      <input type="text" name="estado3" id="estado3" value="MG" />
+      <input type="text" name="cidade3" id="cidade3" value="Viçosa" />
+      <script language="JavaScript" type="text/javascript" charset="utf-8">
+        new dgCidadesEstados({
+          cidade: document.getElementById('cidade3'),
+          estado: document.getElementById('estado3'),
+          change: true
+        })
+      </script>
+    </body>
+  </html>
